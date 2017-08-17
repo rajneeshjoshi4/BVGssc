@@ -1,0 +1,41 @@
+html,
+body {
+	color: @secondary;
+	height: 100%;
+	font-family: Raleway-Regular;
+	font-size: 14px;
+}
+
+a {
+	color: @secondary !important;
+	&:hover {
+		color: @secondary;
+		opacity: .8;
+		text-decoration: none;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	&.cdr-body-bg {
+		background: #8eb33f url('@{img-path}cdr-landing-demarrage.png');
+	}
+	&.cdr-body-bg-2 {
+		background: #23ade1 url('@{img-path}cdr-landing-maintenance.png');
+	}
+}
+
+strong {
+	font-family: Raleway-Bold;
+	font-weight: normal;
+}
+
+.cdr-row-no-padding {
+	[class*="col-"] {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}

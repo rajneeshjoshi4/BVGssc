@@ -1,0 +1,183 @@
+<div class="row">
+  <div class="col-sm-12 main">
+    <!-- Nav tabs -->
+
+
+    <div class="form-horizontal">
+      <h4 class="bv-section-header">Accounts Details</h4>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="well clearfix">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="a1" class="col-sm-3 control-label">Account Payee</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="a1" placeholder="Account Payee">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="a2" class="col-sm-3 control-label">Employee ID</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="a2" placeholder="Employee ID">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+
+              <div class="form-group">
+                <label for="a3" class="col-sm-3 control-label">Team name</label>
+                <div class="col-sm-9">
+                  <select class="form-control">
+                    <option>Select</option>
+                    <option>Java</option>
+                    <option>Admin</option>
+                    <option>HR</option>
+                    <option>DotNet</option>
+
+                  </select>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="a4" class="col-sm-3 control-label">Bank Account</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="a4" placeholder="Bank Account">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+
+              <div class="form-group">
+                <label for="a5" class="col-sm-3 control-label">IFSC Code</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="a5" placeholder="IFSC Code">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="bv-section-header">Expense Details</h4>
+      <div class="row">
+
+        <div class="col-sm-12">
+          <div class="well clearfix">
+
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="b1" class="col-sm-3 control-label">Date</label>
+                <div class="col-sm-9">
+                  <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+                    <input type="text" class="form-control" id="exampleInputAmount" ng-model="selectedDate" name="date" bs-datepicker>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+
+              <div class="form-group">
+                <label for="b2" class="col-sm-3 control-label">BU Code</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" disabled id="b2" placeholder="BU Code" value="2067">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+
+              <div class="form-group">
+                <label for="b3" class="col-sm-3 control-label">Claim Amount</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="b3" placeholder="Claim Amount">
+                </div>
+              </div>
+
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="b4" class="col-sm-3 control-label">Expense Type</label>
+                <div class="col-sm-9">
+                  <select class="form-control">
+                    <option>Expense type 01</option>
+                    <option>Expense type 02</option>
+                    <option>Expense type 03</option>
+                    <option>Expense type 04</option>
+                    <option>Expense type 05</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="b4" class="col-sm-3 control-label">Brief Description</label>
+                <div class="col-sm-9">
+                  <textarea class="form-control" rows="3"></textarea>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+
+              <div class="form-group">
+                <label for="b5" class="col-sm-3 control-label">Expense Code</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="b3" placeholder="" value="Code1234" disabled>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <h4 class="bv-section-header">Team Members Name</h4>
+      <div class="row">
+        <div class="col-sm-12">
+
+          <div class="well clearfix">
+
+            <div class="col-sm-6">
+              <div class="form-group">
+
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="b1" placeholder="">
+                </div>
+                <div class="col-sm-3">
+                  <!--<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></button>-->
+                  <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12" style="padding-bottom:10px">
+              <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nav tabs Ends-->
+  </div>
+
+  <div class="col-sm-12" style="padding-top:10px">
+    <p>
+      <button class="btn btn-success" type="button"><span class="glyphicon glyphicon-floppy-saved" aria-hidden="true"></span> Submit</button>
+      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Clear Parameters</button>
+      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel</button>
+
+    </p>
+  </div>
+</div>
